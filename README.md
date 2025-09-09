@@ -1,8 +1,8 @@
 # **🐻 YOLOv9c 台灣黑熊物件偵測模型**
 本專案使用YOLOv9c最新架構，結合Optuna超參數調優，專為台灣黑熊在野外環境中的影像辨識、保育與預警而設計。
 研究歷程完整紀錄於效能分析報告並集結多輪訓練經驗，透過資料精選、典型負樣本加入與多種資料增強，使模型泛化能力、精準率與實用性大幅提升。
-🔽 Yoolov9c模型檔案太大，最終版本放在Huggingface 🔽
-https://huggingface.co/sonia2025/3kumay-yolov9c-lastpt/tree/main
+Yoolov9c模型檔案太大，最終版本放在Huggingface
+➡️ https://huggingface.co/sonia2025/3kumay-yolov9c-lastpt/tree/main
 
 # **專案特色**
 - 先進架構：採用 YOLOv9c，較 YOLOv8s 更適應小目標、遮蔽物偵測與真實場域多變環境。
