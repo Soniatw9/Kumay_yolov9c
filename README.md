@@ -16,7 +16,6 @@
 
 ｜重要訓練超參數與優化策略｜
 - 核心訓練指令（可參考訓練 notebook 或 Ultralytics 命令格式）：
-shell
 yolo task=detect mode=train model=yolov9c.pt data=blackbear_aug.yaml \
 epochs=300 patience=40 time=10 imgsz=640 batch=32 device=0,1 workers=16 \
 optimizer=AdamW lr0=0.00038 lrf=0.08 cos_lr=True weight_decay=0.0006 momentum=0.937 \
@@ -32,6 +31,7 @@ box=0.05 cls=1.2 dfl=1.5 name=kumay_v9c_optuna project=5Kumay_yolov9c
 - 正/負樣本調和：訓練集加入多場景負樣本，有效降低誤報
 
 ｜模型效能指標｜
+<img width="463" height="302" alt="Screenshot 2025-09-09 at 3 59 34 PM" src="https://github.com/user-attachments/assets/3ead979e-25b1-4a25-9227-b66420a87a68" />
 指標          第一次訓練  第二次訓練    第三次訓練    第四次訓練
 mAP@0.5      0.9692	    0.9800	    0.9549	    0.9532
 mAP@0.5:0.95 0.7918	    0.8062	    0.7763	    0.7638
